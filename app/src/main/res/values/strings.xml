@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Flow RxJava LiveData</string>
+
+    <string name="load_label">Loading…</string>
+    <string name="stop_label">Stop loading…</string>
+    <string name="next_screen_button">Next</string>
+    <string name="second_screen_label">Second Screen</string>
 </resources>
