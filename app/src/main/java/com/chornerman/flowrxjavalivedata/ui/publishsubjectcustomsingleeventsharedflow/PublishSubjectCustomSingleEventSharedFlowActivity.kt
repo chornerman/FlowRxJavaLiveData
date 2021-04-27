@@ -34,7 +34,7 @@ class PublishSubjectCustomSingleEventSharedFlowActivity : AppCompatActivity() {
             viewModel.triggerRedirectToNextScreenPublishSubject()
         }
         btCustomSingleEventNextScreen.setOnClickListener {
-
+            viewModel.triggerRedirectToNextScreenCustomSingleEvent()
         }
     }
 
@@ -50,6 +50,9 @@ class PublishSubjectCustomSingleEventSharedFlowActivity : AppCompatActivity() {
             .subscribe { redirectToNextScreen() }
         disposables.add(disposable)
 
+        viewModel.redirectToNextScreenCustomSingleEvent.observe(this, {
+            redirectToNextScreen()
+        })
     }
 
     private fun redirectToNextScreen() {
