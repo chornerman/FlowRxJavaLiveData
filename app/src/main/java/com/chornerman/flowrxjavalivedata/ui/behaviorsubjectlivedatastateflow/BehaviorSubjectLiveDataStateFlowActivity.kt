@@ -34,7 +34,7 @@ class BehaviorSubjectLiveDataStateFlowActivity : AppCompatActivity() {
             viewModel.loadOrStopBehaviorSubject()
         }
         btLiveDataLoadOrStop.setOnClickListener {
-
+            viewModel.loadOrStopLiveData()
         }
     }
 
@@ -59,6 +59,14 @@ class BehaviorSubjectLiveDataStateFlowActivity : AppCompatActivity() {
                 )
             }
         disposables.add(disposable)
+
+        viewModel.shouldShowLoadingLiveData.observe(this, { shouldShowLoading ->
+            showHideLoading(
+                shouldShowLoading = shouldShowLoading,
+                progressBar = pbLiveData,
+                loadOrStopButton = btLiveDataLoadOrStop
+            )
+        })
     }
 
     private fun showHideLoading(

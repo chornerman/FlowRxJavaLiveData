@@ -1,6 +1,6 @@
 package com.chornerman.flowrxjavalivedata.ui.behaviorsubjectlivedatastateflow
 
-import androidx.lifecycle.ViewModel
+import androidx.lifecycle.*
 import io.reactivex.Observable
 import io.reactivex.subjects.BehaviorSubject
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -12,9 +12,13 @@ abstract class BehaviorSubjectLiveDataStateFlowViewModel : ViewModel() {
 
     abstract val shouldShowLoadingBehaviorSubject: Observable<Boolean>
 
+    abstract val shouldShowLoadingLiveData: LiveData<Boolean>
+
     abstract fun loadOrStopStateFlow()
 
     abstract fun loadOrStopBehaviorSubject()
+
+    abstract fun loadOrStopLiveData()
 }
 
 class BehaviorSubjectLiveDataStateFlowViewModelImpl : BehaviorSubjectLiveDataStateFlowViewModel() {
@@ -27,11 +31,19 @@ class BehaviorSubjectLiveDataStateFlowViewModelImpl : BehaviorSubjectLiveDataSta
     override val shouldShowLoadingBehaviorSubject: Observable<Boolean>
         get() = _showLoadingBehaviorSubject
 
+    private val _showLoadingLiveData = MutableLiveData(true)
+    override val shouldShowLoadingLiveData: LiveData<Boolean>
+        get() = _showLoadingLiveData
+
     override fun loadOrStopStateFlow() {
         _showLoadingStateFlow.value = !_showLoadingStateFlow.value
     }
 
     override fun loadOrStopBehaviorSubject() {
         _showLoadingBehaviorSubject.onNext(!requireNotNull(_showLoadingBehaviorSubject.value))
+    }
+
+    override fun loadOrStopLiveData() {
+        _showLoadingLiveData.value = !requireNotNull(_showLoadingLiveData.value)
     }
 }
