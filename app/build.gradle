@@ -35,23 +35,23 @@ android {
 }
 
 dependencies {
-
     implementation(
-            'org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version',
-            'androidx.core:core-ktx:1.3.2',
-            'androidx.appcompat:appcompat:1.2.0',
-            'androidx.lifecycle:lifecycle-extensions:2.2.0',
-            'androidx.activity:activity-ktx:1.2.2',
-            'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1',
-            'androidx.activity:activity-ktx:1.2.2',
-            'androidx.constraintlayout:constraintlayout:2.0.4',
-            'com.google.android.material:material:1.3.0'
+            "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+            "androidx.core:core-ktx:$android_core_version",
+            "androidx.appcompat:appcompat:$android_support_version",
+            "androidx.lifecycle:lifecycle-extensions:$android_lifecycle_version",
+            "androidx.lifecycle:lifecycle-viewmodel-ktx:$android_lifecycle_version",
+            "androidx.activity:activity-ktx:$android_activity_version",
+            "androidx.constraintlayout:constraintlayout:$constraint_layout_version",
+            "com.google.android.material:material:$android_material_version",
+            "com.jakewharton.rxbinding3:rxbinding:$rxbinding_version",
+            "com.jakewharton.rxbinding3:rxbinding-core:$rxbinding_version"
     )
 
-    testImplementation 'junit:junit:4.13.2'
+    testImplementation "junit:junit:4.13.2"
 
     androidTestImplementation(
-            'androidx.test.ext:junit:1.1.2',
-            'androidx.test.espresso:espresso-core:3.3.0'
+            "androidx.test.ext:junit:1.1.2",
+            "androidx.test.espresso:espresso-core:3.3.0"
     )
 }

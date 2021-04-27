@@ -3,6 +3,15 @@
 
     <string name="load_label">Loading…</string>
     <string name="stop_label">Stop loading…</string>
-    <string name="next_screen_button">Next</string>
     <string name="second_screen_label">Second Screen</string>
+    <string name="next_screen_button">Next</string>
+    <string name="behavior_subject_vs_live_data_vs_state_flow_button">Behavior Subject vs Live Data vs State Flow</string>
+    <string name="publish_subject_vs_custom_single_event_vs_shared_flow_button">Publish Subject vs Custom Single Event vs Shared Flow</string>
+
+    <string name="shared_flow_title">Shared Flow</string>
+    <string name="publish_subject_title">Publish Subject</string>
+    <string name="custom_single_event_title">Custom Single Event</string>
+    <string name="state_flow_title">State Flow</string>
+    <string name="behavior_subject_title">Behavior Subject</string>
+    <string name="live_data_title">Live Data</string>
 </resources>
