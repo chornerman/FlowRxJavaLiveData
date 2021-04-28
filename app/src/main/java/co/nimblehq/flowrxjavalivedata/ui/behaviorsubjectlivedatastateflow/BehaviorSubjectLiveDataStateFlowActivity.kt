@@ -1,4 +1,4 @@
-package com.chornerman.flowrxjavalivedata.ui.behaviorsubjectlivedatastateflow
+package co.nimblehq.flowrxjavalivedata.ui.behaviorsubjectlivedatastateflow
 
 import android.os.Bundle
 import android.view.View
@@ -6,7 +6,7 @@ import android.widget.ProgressBar
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.chornerman.flowrxjavalivedata.R
+import co.nimblehq.flowrxjavalivedata.R
 import com.google.android.material.button.MaterialButton
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable

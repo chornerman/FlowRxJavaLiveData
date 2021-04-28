@@ -1,8 +1,8 @@
-package com.chornerman.flowrxjavalivedata.ui.publishsubjectcustomsingleeventsharedflow
+package co.nimblehq.flowrxjavalivedata.ui.publishsubjectcustomsingleeventsharedflow
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.chornerman.flowrxjavalivedata.R
+import co.nimblehq.flowrxjavalivedata.R
 
 class SecondActivity : AppCompatActivity() {
 

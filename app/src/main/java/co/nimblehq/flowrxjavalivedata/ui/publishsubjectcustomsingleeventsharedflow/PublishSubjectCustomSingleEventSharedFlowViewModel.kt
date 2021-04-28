@@ -1,4 +1,4 @@
-package com.chornerman.flowrxjavalivedata.ui.publishsubjectcustomsingleeventsharedflow
+package co.nimblehq.flowrxjavalivedata.ui.publishsubjectcustomsingleeventsharedflow
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel

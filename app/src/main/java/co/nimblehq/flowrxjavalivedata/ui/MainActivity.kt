@@ -1,10 +1,11 @@
-package com.chornerman.flowrxjavalivedata
+package co.nimblehq.flowrxjavalivedata.ui
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.chornerman.flowrxjavalivedata.ui.behaviorsubjectlivedatastateflow.BehaviorSubjectLiveDataStateFlowActivity
-import com.chornerman.flowrxjavalivedata.ui.publishsubjectcustomsingleeventsharedflow.PublishSubjectCustomSingleEventSharedFlowActivity
+import co.nimblehq.flowrxjavalivedata.R
+import co.nimblehq.flowrxjavalivedata.ui.behaviorsubjectlivedatastateflow.BehaviorSubjectLiveDataStateFlowActivity
+import co.nimblehq.flowrxjavalivedata.ui.publishsubjectcustomsingleeventsharedflow.PublishSubjectCustomSingleEventSharedFlowActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

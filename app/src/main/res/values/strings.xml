@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Flow RxJava LiveData</string>
+    <string name="app_name">Flow vs RxJava vs LiveData</string>
 
     <string name="load_label">Loading…</string>
     <string name="stop_label">Stop loading…</string>

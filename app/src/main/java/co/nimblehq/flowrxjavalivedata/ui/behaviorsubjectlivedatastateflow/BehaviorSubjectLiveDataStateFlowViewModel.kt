@@ -1,4 +1,4 @@
-package com.chornerman.flowrxjavalivedata.ui.behaviorsubjectlivedatastateflow
+package co.nimblehq.flowrxjavalivedata.ui.behaviorsubjectlivedatastateflow
 
 import androidx.lifecycle.*
 import io.reactivex.Observable

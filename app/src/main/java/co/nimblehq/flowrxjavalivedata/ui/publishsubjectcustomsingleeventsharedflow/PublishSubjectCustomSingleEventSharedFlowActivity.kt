@@ -1,11 +1,11 @@
-package com.chornerman.flowrxjavalivedata.ui.publishsubjectcustomsingleeventsharedflow
+package co.nimblehq.flowrxjavalivedata.ui.publishsubjectcustomsingleeventsharedflow
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.chornerman.flowrxjavalivedata.R
+import co.nimblehq.flowrxjavalivedata.R
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import kotlinx.android.synthetic.main.activity_publish_subject_custom_single_event_shared_flow.*
